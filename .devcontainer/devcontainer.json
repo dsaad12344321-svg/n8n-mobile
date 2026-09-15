@@ -1,0 +1,24 @@
+{
+  "name": "n8n Mobile",
+
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true
+    }
+  },
+
+  "forwardPorts": [5678],
+
+  "portsAttributes": {
+    "5678": {
+      "label": "n8n",
+      "protocol": "http",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  "postCreateCommand": "bash .devcontainer/start.sh"
+}
