@@ -28,5 +28,7 @@ echo "n8n should be available on:"
 echo "http://localhost:5678"
 
 echo ""
-echo "Open the PORTS tab and select port 5678."
+echo "Open the PORTS tab and use port 5678."
+echo "Set Visibility to Public."
+echo "Protocol should remain HTTP."
 echo "======================================"
