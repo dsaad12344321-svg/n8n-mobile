@@ -1,0 +1,10 @@
+{
+  "name": "n8n-mobile",
+  "private": true,
+  "scripts": {
+    "n8n": "bash start-n8n.sh",
+    "n8n:stop": "docker compose stop",
+    "n8n:restart": "docker compose restart && docker compose ps",
+    "n8n:status": "docker compose ps"
+  }
+}
